@@ -9,4 +9,6 @@
 
     MTR-ANTE 1.1.0が必要です
 
-[NEST Technologyの公式Discord](https://discord.gg/x8HBB3gaE6)からダウンロードできます。
+    ANTE FIXは互換性がありません
+
+[Modrinth](https://modrinth.com/mod/mtr3-next-technology-addon)からダウンロードできます。

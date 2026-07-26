@@ -36,6 +36,8 @@ function calcInternalValue(kmhPerSec) {
 }
 ```
 | `train.setRailSpeed(long id, float speed): void` | レール速度を設定します。単位はm/tickです。|
+| `train.setManualNotch(long id, int notch): void` | マニュアルなノッチを設定します。|
+| `train.setDoorState(long id, boolean doorState)` | ドア状態を設定します。|
 | `train.getBlockDistance(long id): void` | 前方列車までの閉塞単位の距離を取得するようサーバーに送信します。結果は、`train.getServerResponse(long id, "getBlockDistance")`を使用することで取得できます。|
 | `train.sendRequestToServer(long id, String requestType): void` | idとrequestTypeをサーバーに送信します。結果は、`train.getServerResponse(long id, String [先程のrequestType])`を使用することで取得できます。|
 | `train.sendRequestToServer(long id, String requestType, long body): void` | idとrequestType、さらにbodyをサーバーに送信します。bodyはlong型でなければなりません。|
@@ -45,6 +47,7 @@ function calcInternalValue(kmhPerSec) {
 | `train.setLinkingMode(long id, long mode): void` | 連結モードを設定します。詳しくは[こちらをご覧ください](Linking/)。 |
 | `train.getLinkingMode(long id): Long` | 現在の連結モードを取得します。 |
 | `train.Unlinking(long id): void` | 連結を解除します。 |
+| `train.getKeyEvent(long id)` | キーボードイベントを取得します。 |
 
 
 ## `requestType`の一覧と説明
